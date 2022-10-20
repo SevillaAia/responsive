@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, rgba(183,67,232,1) 0%, rgba(252,70,107,1) 100%);
+  background-repeat: no-repeat;
+    
+}
+
+img {
+    display: block;
+    width: 75%;
+    height: 600px;
+    object-fit: cover;
+    margin: 2rem auto;
+}
+
+.desktop {
+    display: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.tablet {
+    display: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.mobile {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+@media only screen and (min-width: 501px) {
+
+    .contain {
+    max-width: 900px;
+    }
+    
+  body {
+    background: linear-gradient(black, rgb(96, 128, 245) )
+  } 
+ 
+  img {
+    max-width: 900px;
+}
+
+.desktop {
+    display: none;
+}
+
+.tablet {
+    display: block;
+  }
+
+.mobile {
+    display: none;
+}
+
+}
+
+@media only screen and (min-width: 901px) {
+
+    .contain {
+    max-width: 1200px;
+    }
+    
+  body {
+    background: linear-gradient(black, rgb(240, 9, 9) )
+  } 
+ 
+  img {
+    max-width: 1200px;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.tablet {
+  display: none;
+}
+}
